@@ -9,6 +9,7 @@
   --color_custom4: rgb(162, 162, 235);
 
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -55,4 +56,105 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  text-transform: capitalize;
+}
+
+.footer {
+  width: 100%;
+  height: 70px;
+  background-color: var(--color_custom1);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 5px;
+  font-size: 12px;
+  gap: 5px;
+}
+
+.footer h2,
+.footer p {
+  font-family: var(--parrafo);
+}
+
+.sectionForm {
+  width: 100%;
+  min-height: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 2px solid tomato;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 3rem;
+
+}
+
+.sectionForm .formContact {
+  position: relative;
+  width: 450px;
+  min-height: 200px;
+
+  border-radius: 4px;
+  padding: 2rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+  border-radius: 6px;
+  background: #eb7661;
+  box-shadow: 17px 17px 31px #b55b4b,
+    -17px -17px 31px #ff9177;
+}
+
+.sectionForm .formContact .section_formContact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 3px;
+
+  & label {
+    width: 100%;
+    font-family: var(--titulo);
+    font-size: 15px;
+    text-transform: capitalize;
+  }
+
+  & input {
+    width: 100%;
+    height: 1.6rem;
+    padding: 0 5px;
+    border-radius: 5px;
+    border: none;
+    font-family: var(--parrafo);
+  }
+}
+
+#saludo {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Estilo de error */
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+input.error {
+  border-color: red;
 }

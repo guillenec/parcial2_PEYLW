@@ -9,7 +9,10 @@
 </head>
 
 <body class="principal">
-  <header class="header">parcial2</header>
+  <header class="header">
+    <a href="./index.html">punto1</a>
+    <a href="./punto2/index.html">punto2</a>
+  </header>
   <main class="main">
     <h1>
       🧑‍💻 contacto:
@@ -19,19 +22,25 @@
       <form action="" class="formContact">
         <!-- Section nombre -->
         <section class="section_formContact">
-          <label for="nombre">nombre</label>
+          <label for="nombre" id="labelNombre">nombre</label>
           <input type="text" name="nombre" id="nombre" maxlength="20" placeholder="ingrese su nombre" required>
         </section>
 
         <!-- secction apellido -->
         <section class="section_formContact">
-          <label for="apellido">apellido</label>
+          <label for="apellido" id="labelApellido">apellido</label>
           <input type="text" name="apellido" id="apellido" maxlength="20" placeholder="ingrese su apellido">
         </section>
       </form>
+
+      <!-- Párrafo donde se mostrará el saludo -->
+      <p id="saludo"></p>
     </section>
   </main>
-  <footer></footer>
+  <footer class="footer">
+    <h2>Nodo Curza Ingeniero Jacobacci</h2>
+    <p>&copy; sin copy</p>
+  </footer>
   <script src="./script.js"></script>
 
 </body>
